@@ -5,11 +5,13 @@ codeunit 70000000 "CalcItem Classification Meth."
     end;
     procedure CalcItemClassification(Item: Record 27);
     var
-        handled : Boolean;
+        Handled : Boolean;
     begin
-        DoCalcItemClassification(Item, handled);
+        OnBeforeCalcItemClassification(Handled);
+        DoCalcItemClassification(Item, Handled);
+        OnAfterCalcItemClassification();
     end;
-    local procedure DoCalcItemClassification(Item: Record 27; handled: Boolean);
+    local procedure DoCalcItemClassification(Item: Record 27; Handled: Boolean);
     var
         SalesCount : Integer;
     begin
@@ -43,5 +45,15 @@ codeunit 70000000 "CalcItem Classification Meth."
             ELSE 
                 EXIT(Code);
         END;
+    end;
+
+    [Integration(false, false)]
+    procedure OnBeforeCalcItemClassification(var Handled: Boolean);
+    begin
+    end;
+
+    [Integration(false, false)]
+    procedure OnAfterCalcItemClassification();
+    begin
     end;
 }
