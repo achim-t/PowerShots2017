@@ -15,7 +15,7 @@ codeunit 70000003 "Insert Default Values Meth."
         OnAfterInsertDefaultValue;
     end;
 
-    procedure DoInsertDefaultValues(var Handled: Boolean);
+    local procedure DoInsertDefaultValues(var Handled: Boolean);
     begin
         IF Handled THEN EXIT;
 
@@ -24,7 +24,7 @@ codeunit 70000003 "Insert Default Values Meth."
         InsertDefaultValue('C', 'Sold never', 0, TRUE);
     end;
 
-    procedure InsertDefaultValue(pCode : Code[10];pDescription : Text[50];pMinimumSalesCount : Decimal;pWarning : Boolean);
+    local procedure InsertDefaultValue(pCode : Code[10];pDescription : Text[50];pMinimumSalesCount : Decimal;pWarning : Boolean);
     var
         ItemClassification: Record "Item Classification";
     begin

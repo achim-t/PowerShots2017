@@ -33,4 +33,11 @@ table 70000000 "Item Classification"
     begin
     end;
 
+    procedure InsertDefaultValues();
+    var 
+        InsertDefaultValuesMeth: Codeunit "Insert Default Values Meth.";
+    begin
+        InsertDefaultValuesMeth.InsertDefaultValues;
+    end;
+
 }
