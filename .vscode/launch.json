@@ -12,7 +12,8 @@
 			"server": "http://localhost",
 			"serverInstance": "navision_main",
 			"tenant": "default",
-			"windowsAuthentication": true
+			"windowsAuthentication": true,
+			"startupObjectId": 70000000
 		}
 	]
 }
