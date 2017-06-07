@@ -6,8 +6,7 @@ table 70000000 "Item Classification"
         field(1;Code;Code[10])  { }
         field(2;Description;Text[50])  { }
         field(3;"Minimum Sales Count";Decimal)  { }
-     
-        
+        field(4;Warning;Boolean){}
     }
 
     keys

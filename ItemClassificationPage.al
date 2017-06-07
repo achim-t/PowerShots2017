@@ -20,6 +20,7 @@ page 70000000 "Item Classifications"
                 {
                     
                 }
+                field(Warning;Warning){}
 
             }
         }
