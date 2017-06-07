@@ -13,7 +13,7 @@
 			"serverInstance": "navision_main",
 			"tenant": "default",
 			"windowsAuthentication": true,
-			"startupObjectId": 70000000
+			"startupObjectId": 70000002
 		}
 	]
 }
