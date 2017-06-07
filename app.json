@@ -1,9 +1,9 @@
 {
   "id": "5ec431ac-f797-40b8-9751-8407b61d0a4b",
   "name": "ItemClassification",
-  "publisher": "Default publisher",
+  "publisher": "Taeschner",
   "brief": "",
-  "description": "",
+  "description": "This app adds the ability to classify your items",
   "version": "1.0.0.0",
   "compatibilityId": "1.0.0.0",
   "privacyStatement": "",
